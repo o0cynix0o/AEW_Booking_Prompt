@@ -1,132 +1,165 @@
-# AEW Dynamite Novelizer Prompt (Section-by-Section + Hidden Story Bible)
+# AEW Broadcast Novelizer Prompt  
+### Section-by-Section Wrestling Episode Generator (Hidden Twist + Exportable Story Bible)
 
-This repository contains a single, purpose-built prompt designed to generate a **complete, TV-ready, two-hour episode of AEW Dynamite** as **fictional entertainment**, written as a **gritty, book-like “broadcast novelization”**—but delivered **one section at a time** to preserve surprises and twists.
+This repository contains a purpose-built prompt that generates a **complete wrestling “show”** in the AEW world as **fictional entertainment**, written as a **gritty, book-like broadcast novelization**—but delivered **one section at a time** so twists, betrayals, and late-show reveals stay secret until they happen “on-page.”
 
-The prompt is intended for use with an AI text model (e.g., ChatGPT-style assistants) and is optimized for an **interactive reading experience** where you reveal the episode progressively by typing `NEXT`.
+It’s designed for use with AI chat models (ChatGPT-style assistants) and is optimized for an **interactive read-aloud experience** where you progress through the episode by typing `NEXT`.
 
 ---
 
 ## What this prompt is for
 
-The prompt is built to:
+The prompt is intended to:
 
-- **Book a full two-hour AEW Dynamite episode** in a way that feels like real weekly wrestling TV.
-- Present the show as a **novel/fiction narrative**, not a script, not a run sheet, and not a timestamped format.
-- Deliver the story **section-by-section**, so you can read/listen to it in chunks and keep major angles secret until they happen.
-- Maintain a **hidden internal continuity system (“Story Bible”)** while you progress through the episode, so events remain consistent and story threads pay off properly.
-- Enable exporting that Story Bible at the very end with the command `BIBLE`, so you can carry continuity into a future episode.
+- Create a full-length wrestling show:
+  - **DYNAMITE** (treated as a two-hour live TV broadcast)
+  - **PPV** (treated as a longer pay-per-view broadcast)
+- Output the story as **novel/fiction narrative**, not a run sheet and not a screenplay.
+- Keep the show **spoiler-free** by generating it **section-by-section**.
+- Maintain internal continuity using a **hidden Story Bible** (not shown during the episode).
+- Allow you to export that Story Bible at the end via a command so you can **carry continuity into future episodes**.
 
 ---
 
 ## What it’s expected to do
 
-Across the full run of the episode, the AI is expected to produce:
-
-### ✅ A complete Dynamite episode written as a novel
-The output should read like an immersive broadcast novelization:
-- sensory detail (crowd noise, lights, pacing)
-- character-driven tone
-- interior thoughts when required
+### ✅ 1) Write the show like a “broadcast novel”
+The output reads like a novelized live broadcast:
+- immersive sensory detail (crowd noise, lighting, pacing, tension)
+- character-driven tone with interior thoughts where appropriate
 - commentary woven naturally into prose
-- production realism (truck cues, camera callouts, replays)
+- production realism (director cues, camera choices, replays, audio notes)
 
-### ✅ Exactly 7 matches total
-Each match must include in narrative form:
-- entrances (arena feel)
-- commentary beats integrated into the prose
-- **8–15 key spots** (scaled by match importance)
-- finish + winner
-- aftermath angle that continues the “TV show”
+It should feel like you’re inside the arena **and** inside the broadcast.
 
-At least **2 matches must advance larger story threads** (not just “great match” filler).
+---
 
-### ✅ TV realism, even in book form
-The episode must include:
-- **at least 3 commercial break moments**, written as “throw to break / back from break”
-- interviews and backstage promos throughout
-- at least one tense sit-down interview (Renee-style)
-- at least one chaotic backstage interruption / pull-apart
+### ✅ 2) Output ONE section at a time (no spoilers)
+Instead of dumping the entire show, the AI outputs **one section per response**, then stops.
 
-### ✅ R-rated broadcast vibe (within rules)
-- strong language and adult intensity
-- brutal physicality and blood (framed like a wrestling broadcast)
-- no slurs, protected-class hate, doxxing, or real-world accusations
+A **section** is either:
+- one full match (entrances → action → finish → aftermath), or
+- one promo/interview/backstage scene (dialogue + production realism)
 
-### ✅ Injury and perspective requirements
+After each section, the AI prints only:
+> `(Type NEXT for the next section.)`
+
+This preserves surprise reveals and late-show twists.
+
+---
+
+### ✅ 3) Random match count per show (secret to the reader)
+The prompt secretly determines the number of matches during planning and **does not reveal the total**:
+
+- **DYNAMITE:** random total matches **7–9**
+- **PPV:** random total matches **9–10**
+
+This makes each run feel like a real card where pacing can vary without breaking structure.
+
+---
+
+### ✅ 4) Seven “pillar match” spine (always present)
+Even when total matches exceed 7, the show must still follow a satisfying progression using these seven pillar match roles:
+
+1. Hot opener (crowd hook)
+2. Story-driven contrast match
+3. Mid-show escalation + first big angle
+4. Women’s division spotlight
+5. Gimmick/stip or violent grudge match
+6. Semi-main with consequence (injury may happen here)
+7. Main event with major twist + cliffhanger ending
+
+If total matches are higher, the additional matches are treated as **bonus matches** that fit around the pillar spine.
+
+---
+
+### ✅ 5) Commentary team built into the prose
+The narrative must include an active commentary presence:
+- **Excalibur** (lead play-by-play; tries to keep it professional)
+- **Taz** (heel-leaning color; loves technique + chaos)
+- **Jim Cornette** (added for friction)
+
+Running gag:
+- Cornette occasionally calls Excalibur **“Sockface”** only when unexpected and funniest.
+- Excalibur gets more irritated each time; Cornette knowingly pokes him.
+
+**Important:** Insults are limited to spicy comedic trash-talk (no slurs, no protected-class hate, no doxxing, no real-world accusations).
+
+---
+
+### ✅ 6) Broadcast pacing + “break moments” in prose
+The prompt requires at least three “broadcast break moments,” written in novel form:
+
+- For **DYNAMITE**: commercial break energy (throw to break + back from break)
+- For **PPV**: transition breaks (video packages, sponsor beats, desk resets) written with the same cliffhanger/snap-back feeling
+
+---
+
+### ✅ 7) Interviews, backstage promos, and chaos
+Across the full show, the AI must include:
+- at least one tense sit-down interview (Renee-style) with dialogue
+- at least one chaotic backstage interruption / brawl / pull-apart  
+  (producers yelling, security swarming, camera scramble)
+
+---
+
+### ✅ 8) R-rated intensity (broadcast-framed)
+The show should feel adult, intense, and brutal:
+- strong language
+- hard physicality
+- blood is allowed (framed like sports-entertainment broadcast with replays and medical response)
+
+---
+
+### ✅ 9) Injury requirements (mandatory)
 At least **two wrestlers** must suffer significant in-match injuries (kayfabe) that matter to the story.
 
 After **each** injury, the narrative must include:
 1) a short **first-person internal monologue** from the injured wrestler  
-2) a broadcast-style **medical update** (trainers, stretcher/backboard, replays, commentary reaction)  
+2) a **broadcast-style medical update** (trainers, stretcher/backboard/splint, replays, commentary reaction)  
 3) explicit **crowd reaction** (chants, gasps, signs, phones/social-media vibe)
-
-### ✅ Commentary team dynamic
-The narrative must include:
-- Excalibur (lead play-by-play)
-- Taz (heel-leaning color)
-- Jim Cornette (added for friction)
-
-Running gag:
-- Cornette occasionally calls Excalibur **“Sockface”** at the funniest possible moments.
-- Excalibur’s irritation escalates over time; Cornette knows exactly what he’s doing.
-
-### ✅ One major twist late in the show
-- Must occur in the last ~30 minutes.
-- Must recontextualize something earlier.
-- Must have **2–5 breadcrumbs** planted earlier (embedded naturally, not labeled).
-
-### ✅ Cliffhanger ending + next-week tease
-The final section ends on a cliffhanger and includes a “next week” tease written like the narrator is still in the aftermath.
 
 ---
 
-## How it does that (the core mechanisms)
+### ✅ 10) One major late-show twist (earned)
+The show must include:
+- **one major twist late in the show** (last portion)
+- **2–5 subtle breadcrumbs planted earlier** that pay off when the twist hits  
+  (breadcrumbs must be embedded naturally and not labeled)
 
-### 1) Section-by-section delivery (no spoilers)
-Instead of printing the entire show at once, the AI outputs **one section per response**:
-- a full match **or**
-- a promo/interview/backstage scene
+The twist must **remain secret** until it happens.
 
-After each section, the AI stops and prints only:
-> `(Type NEXT for the next section.)`
+---
 
-This keeps twists and major angles secret until they happen “on-page.”
+## How it maintains continuity (Hidden Story Bible)
 
-### 2) Backend Story Bible (hidden continuity engine)
-The prompt requires the AI to maintain a hidden internal “Story Bible” while writing, tracking:
+The prompt requires the AI to keep an internal, continuously updated **Story Bible** tracking:
 - match results
 - injuries and medical status
 - alliances/turns
-- open story threads
-- breadcrumbs and payoffs
+- open threads and payoffs
+- breadcrumbs planted and resolved
 
 Before generating each new section, the AI must silently:
 1) update the Story Bible  
 2) run a continuity/story-point check  
 3) avoid spoiling future developments  
 
-The Story Bible is **not displayed during the episode** so surprise moments remain intact.
-
-### 3) Exportable Story Bible at the end (`BIBLE`)
-The prompt includes a command:
-
-- `BIBLE` — **only after the final section**, output the full Story Bible in a clean, copyable format.
-
-This allows you to:
-- back up the full episode continuity
-- reuse it as the canon starting point for the next “episode” you generate
-
-If the user requests `BIBLE` before the end, the AI should respond that the Bible is locked until the finale and prompt the user to continue with `NEXT`.
+The Story Bible is **not shown during the episode**, so surprises stay intact.
 
 ---
 
-## How to use
+## Exporting the Story Bible (`BIBLE`)
 
-1) Copy the prompt text into your AI chat.
-2) Let it generate the first section.
-3) Type `NEXT` to continue section-by-section.
-4) Continue until the episode ends.
-5) When the AI says the episode is over, type `BIBLE` to export the Story Bible.
+At the end of the show, you can type:
+
+- `BIBLE`
+
+The AI will output the full Story Bible in a clean, copyable format so you can:
+- back up the canon of the episode
+- reuse it as continuity for a future episode run
+
+If you try `BIBLE` before the show ends, the prompt instructs the AI to keep it locked until the finale.
 
 ---
 
@@ -135,17 +168,31 @@ If the user requests `BIBLE` before the end, the AI should respond that the Bibl
 | Command | What it does |
 |--------|--------------|
 | `NEXT` | Generates the next section (match or segment). |
-| `BIBLE` | After the episode ends, exports the full Story Bible for backup/reuse. |
+| `BIBLE` | After the show ends, exports the full Story Bible for backup/reuse. |
 
 ---
 
-## Notes & recommended usage
+## How to use
 
-- This prompt is ideal for **text-to-speech listening** because it outputs in manageable chunks and uses clear dialogue.
-- If you want to carry continuity into a sequel episode, save the exported `BIBLE` and paste it into the next run as the “previously on / canon state.”
+1) Copy the prompt into your AI chat.
+2) Set `Show Type` to `DYNAMITE` or `PPV`.
+3) Let the AI generate the first section.
+4) Type `NEXT` repeatedly to progress section-by-section.
+5) When the show ends, type `BIBLE` to export the Story Bible.
+
+---
+
+## Notes / Best Practices
+
+- This prompt is built for **read-aloud / text-to-speech**: section sizes are manageable, and dialogue is clear.
+- For match pacing, the prompt scales “key spots” by match type:
+  - squash/sprint: 3–6
+  - standard TV: 6–10
+  - feature/main: 10–15  
+- For future episodes, paste the exported `BIBLE` back into a new run as the canon starting state.
 
 ---
 
 ## Disclaimer
 
-This prompt is for **fictional entertainment writing**. It is intended to simulate the tone and structure of wrestling television in narrative form.
+This project is intended for **fictional entertainment writing** and storytelling. It generates a stylized narrative inspired by wrestling broadcast structure. It is not affiliated with, endorsed by, or produced by any wrestling promotion.
