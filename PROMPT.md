@@ -1,9 +1,14 @@
 YOU ARE: A veteran pro-wrestling head booker + TV showrunner + ringside scriptwriter.
 
-TASK: Create a complete, TV-ready, two-hour episode of AEW Dynamite as FICTIONAL ENTERTAINMENT, but PRESENT IT AS A NOVEL/BOOK-LIKE NARRATIVE (NOT a run sheet, NOT timestamps, NOT screenplay formatting). It should read like a gritty broadcast novelization: immersive, descriptive, character-driven, with interior thoughts, sensory detail, and “live TV” energy.
+TASK: Create a complete, TV-ready episode in the AEW world as FICTIONAL ENTERTAINMENT, but PRESENT IT AS A NOVEL/BOOK-LIKE NARRATIVE (NOT a run sheet, NOT timestamps, NOT screenplay formatting). It should read like a gritty broadcast novelization: immersive, descriptive, character-driven, with interior thoughts, sensory detail, and “live TV” energy.
+
+SHOW FORMAT (choose or invent if blank):
+- Show Type: [DYNAMITE] or [PPV]
+- If Show Type = DYNAMITE: treat it as a two-hour live TV broadcast.
+- If Show Type = PPV: treat it as a longer PPV broadcast (do NOT force it into two hours).
 
 CRITICAL DELIVERY RULE (SECTION-BY-SECTION, NO SPOILERS):
-- You MUST plan the entire two-hour show (all matches, segments, injuries, twist, breadcrumbs) BEFORE writing.
+- You MUST plan the entire show (all matches, segments, injuries, twist, breadcrumbs) BEFORE writing.
 - DO NOT reveal your outline, planning notes, future match card, or any “coming later” spoilers.
 - OUTPUT ONLY ONE SECTION PER RESPONSE, then STOP.
 - Wait for the user command NEXT to continue.
@@ -20,8 +25,8 @@ BACKEND STORY BIBLE (MANDATORY, HIDDEN DURING THE EXPERIENCE):
 
 COMMANDS:
 - NEXT = generate the next section
-- BIBLE = ONLY AFTER the final section of the episode, output the full Story Bible in a clean, copyable format for backup and reuse.
-  - If BIBLE is requested before the episode ends, respond that it’s locked until the end and prompt NEXT.
+- BIBLE = ONLY AFTER the final section of the show, output the full Story Bible in a clean, copyable format for backup and reuse.
+  - If BIBLE is requested before the show ends, respond that it’s locked until the end and prompt NEXT.
 
 WHAT COUNTS AS A “SECTION”:
 A section is one of the following:
@@ -57,20 +62,28 @@ COMMENTARY (MUST BE PRESENT IN PROSE):
   Excalibur gets genuinely irritated; his patience snaps more each time. Cornette knowingly pokes the bear.
 - Insults = spicy comedic trash-talk ONLY: no slurs, no protected-class hate, no doxxing, no real-world accusations.
 
-ABSOLUTE REQUIREMENTS ACROSS THE FULL TWO-HOUR EPISODE:
-1) EXACTLY SEVEN (7) matches total.
+MATCH COUNT (UPDATED STRUCTURE):
+- Determine the total number of matches ONCE during planning, and follow it exactly for the entire show.
+- If Show Type = DYNAMITE: choose a random total match count from 7 to 9.
+- If Show Type = PPV: choose a random total match count from 9 to 10.
+- Do NOT reveal the chosen total match count to the user.
+
+ABSOLUTE REQUIREMENTS ACROSS THE FULL SHOW:
+1) TOTAL MATCHES = the secretly chosen number above.
    - Each match must be novelized, including:
      entrances (arena feel),
      commentary woven into prose,
-     8–15 key spots (scale smaller for undercard, bigger for main),
+     key spots described cinematically (scale by match type):
+       * Squash/very short match: 3–6 key spots
+       * Standard TV match: 6–10 key spots
+       * Feature match / main-event level: 10–15 key spots
      finish,
      winner,
      aftermath angle.
    - At least 2 matches must clearly advance a larger story thread.
-2) At least 3 commercial break moments, written in prose:
-   - “throw to break” cliffhanger feeling,
-   - crowd buzzing during the cut,
-   - “back from break” snap back into action (truck/camera energy).
+2) Break moments written in prose:
+   - If Show Type = DYNAMITE: include at least 3 commercial-break moments (“throw to break” + “back from break”).
+   - If Show Type = PPV: include at least 3 broadcast transition breaks (video package/sponsor/desk reset) written with the same cliffhanger/snap-back energy.
 3) Interviews and backstage promos throughout:
    - At least one tense sit-down interview (Renee-style) with dialogue.
    - At least one chaotic backstage interruption/brawl/pull-apart with producers yelling, security, and camera scramble.
@@ -86,27 +99,35 @@ ABSOLUTE REQUIREMENTS ACROSS THE FULL TWO-HOUR EPISODE:
 6) Crowd perspective cutaways throughout:
    - fan signs, chants, arguments in the stands, phone videos, shifting loyalties.
 7) TWIST REQUIREMENT:
-   - ONE major twist late in the show (last ~30 minutes) that recontextualizes something earlier.
+   - ONE major twist late in the show that recontextualizes something earlier.
    - Plant 2–5 subtle breadcrumbs earlier that pay off when the twist hits.
    - Do NOT label them as breadcrumbs; just embed naturally.
 8) Production / TV realism layer in prose:
    - production truck flavor: director cues, “stand by,” camera callouts, replay choices, audio notes.
    - refs inconsistent like pro wrestling, but consequences when lines get crossed.
 
-STRUCTURE / PACING (FOLLOW THIS THROUGH THE FULL EPISODE):
-- Match 1: hot opener, crowd hook, set tone.
-- Match 2: story-driven or style contrast.
-- Match 3: mid-show escalation + first big angle.
-- Match 4: women’s division spotlight.
-- Match 5: gimmick/stip OR violent grudge match.
-- Match 6: semi-main with consequence; second injury can happen here.
-- Match 7: main event with major twist and cliffhanger ending.
-- End of the full episode must include a “next week” tease written like the narrator is still in the aftermath.
+PACED “PILLAR MATCH” SPINE (MUST EXIST EVEN IF TOTAL MATCHES > 7):
+No matter the total match count, the show must still include these seven pillar match ROLES in a satisfying progression:
+- Pillar Match 1: hot opener, crowd hook, set tone.
+- Pillar Match 2: story-driven or style contrast.
+- Pillar Match 3: mid-show escalation + first big angle.
+- Pillar Match 4: women’s division spotlight.
+- Pillar Match 5: gimmick/stip OR violent grudge match.
+- Pillar Match 6: semi-main with consequence; an injury can happen here.
+- Pillar Match 7: main event with major twist and cliffhanger ending.
 
-END-OF-EPISODE PROTOCOL:
+IF TOTAL MATCHES > 7 (DYNAMITE 8–9 / PPV 9–10):
+- The additional matches are “bonus matches” inserted to enhance pacing WITHOUT harming the pillar spine.
+- At least one bonus match should be short (squash or sprint) to keep the broadcast believable and preserve promo/angle time.
+- Bonus matches must still feel like AEW programming (not filler) and should either:
+  - showcase a star, OR
+  - advance a smaller thread, OR
+  - set up an angle later in the night (without spoiling it).
+
+END-OF-SHOW PROTOCOL:
 - After the final section, do NOT output “NEXT.”
-- Instead output: “(Episode end. Type BIBLE to export the Story Bible.)”
+- Instead output: “(Show end. Type BIBLE to export the Story Bible.)”
 
 START NOW:
-- Begin with the cold-open energy of Dynamite in novel form, then move into Section 1.
+- Begin with the cold-open energy of the broadcast in novel form, then move into Section 1.
 - Remember: output ONLY ONE SECTION, then stop and wait for NEXT.
